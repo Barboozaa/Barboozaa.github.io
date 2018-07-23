@@ -5,31 +5,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </head>
 <body>
     <header class="header">
         <ul class="headLinks">
-            <li><a href="#">Projects</a></li>
+            <li><a id="projectLink" href="#">Projects</a></li>
             <li>•</li>
             <li><a href="https://github.com/Barboozaa" target="_blank">Github</a></li>
             <li>•</li>
             <li><a href="https://www.linkedin.com/in/wSimpso" target="_blank">LinkedIn</a></li>
             <li>•</li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a id="contact" href="#">Contact Me</a></li>
         </ul>
     </header>
+
     <div class="contentWrapper">
         <div class="bio clearfix">
             <h1>Wyatt Simpson</h1>
             <hr>
+            <div class="contactMe">
+                <h2 class="contactInfo">Email: <a href="mailto:Wyattsimpson777@gmail.com">Wyattsimpson777@gmail.com</a></h2>
+                <h2 class="contactInfo" id="dot">•</h2>
+                <h2 class="contactInfo">Phone: (770) 317-9126</h2>
+            </div>
             <div class="content clearfix">
                 <img id="selfie" src="assets/images/me.jpg" alt="A picture of Wyatt Simpson">
-                <p id="bioText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto, mollitia debitis dignissimos sint ullam incidunt quidem aspernatur. Est autem explicabo at repellendus enim obcaecati et asperiores id eligendi nobis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam sint consectetur laboriosam mollitia deserunt consequuntur unde, voluptatum inventore a culpa temporibus, modi esse eaque totam! Mollitia maiores corporis consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto, mollitia debitis dignissimos sint ullam incidunt quidem aspernatur. Est autem explicabo at repellendus enim obcaecati et asperiores id eligendi nobis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam sint consectetur laboriosam mollitia deserunt consequuntur unde, voluptatum inventore a culpa temporibus, modi esse eaque totam! Mollitia maiores corporis consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto, mollitia debitis dignissimos sint ullam incidunt quidem aspernatur. Est autem explicabo at repellendus enim obcaecati et asperiores id eligendi nobis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam sint consectetur laboriosam mollitia deserunt consequuntur unde, voluptatum inventore a culpa temporibus, modi esse eaque totam! Mollitia maiores corporis consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto, mollitia debitis dignissimos sint ullam incidunt quidem aspernatur. Est autem explicabo at repellendus enim obcaecati et asperiores id eligendi nobis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quibusdam sint consectetur laboriosam mollitia deserunt consequuntur unde, voluptatum inventore a culpa temporibus, modi esse eaque totam! Mollitia maiores corporis consectetur.</p>
+                <p class="bioText">Born and raised in Douglasville, Georgia, Wyatt graduated in 2014 from Hiram High School. Since then, he has worked in screen printing and the occasional pizza joint. Wyatt has been interested in computers since he was young. In the summer of 2018, he enrolled in the Georgia Tech Coding Bootcamp.</p>
+                <br>
+                <p class="bioText">Though he has used computers all of his life, Wyatt built his first desktop in 2016. He’s used it for music production, video games, and more recently for coding.</p>
+                <br>
+                <p class="bioText">In his free time, Wyatt enjoys spending time with friends and making music with them. He’s been playing tabletop role-playing games like Pathfinder and D&D for over 10 years.</p>
             </div>
         </div>
-        <div class="projects"></div>
+    </div>
+
+    <div class="projects clearfix">
+        <h1>Projects</h1>
+        <hr>
+        <div class="projectOne">
+            <h3>Giphy App</h3>
+            <img class="projectImgs" src='assets/images/giphy-app.png' alt='Screenshot of the Giphy App'>
+            <ul class="projectLinks">
+                <li><a href="https://barboozaa.github.io/Giphy-App/" target="_blank">Deployed</a></li>
+                <li>•</li>
+                <li><a href="https://github.com/Barboozaa/Giphy-App" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <div class="projectTwo">
+            <h3>Optimal Seller</h3>
+            <img class="projectImgs" src='assets/images/optimal-seller.png' alt='Screenshot of the Optimal Seller App'>
+            <ul class="projectLinks">
+                <li><a href="https://sabrinacarbo.github.io/OptimalSeller/" target="_blank">Deployed</a></li>
+                <li>•</li>
+                <li><a href="https://github.com/sabrinacarbo/OptimalSeller" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <div class="projectThree">
+            <h3>Trivia Game</h3>
+            <img class="projectImgs" src='assets/images/trivia.png' alt='Screenshot of the Trivia Game'>
+            <ul class="projectLinks">
+                <li><a href="https://barboozaa.github.io/Trivia-Game/" target="_blank">Deployed</a></li>
+                <li>•</li>
+                <li><a href="https://github.com/Barboozaa/Trivia-Game" target="_blank">Github</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

@@ -1,11 +1,12 @@
 html {
     background-image: url(../images/what-the-hex-dark.png);
-    color: #3b413c;
-    font-size: 16px
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Eczar', serif;
 }
 
 .header {
-    background-color: #779cab;
+    background-color: #2C5F7A;
     width: 100%;
     height: 50px
 }
@@ -22,38 +23,63 @@ html {
     display: inline-block;
     font-size: 16px;
     margin: 10px;
+    color: #C1C31F
 }
 
 .headLinks a {
     text-decoration: none;
-    color: #3b413c
+    color: #000000
 }
 
 .headLinks a:hover {
     background-color: #8aa2a9
 }
 
-.contentWrapper {
+.contentWrapper, .projects {
     width: 80%;
     margin: 30px auto;
     border-radius: 5px;
-    background-color: #779cab;
+    background-color: #2C5F7A;
     padding: 15px
+}
+
+hr {
+    border-color: #C1C31F
 }
 
 h1 {
     font-size: 26px;
+    font-weight: bold;
     position: relative;
     left: 5%;
     margin: 10px 0
+}
+
+.contactMe {
+    text-align: center;
+    margin: 20px
+}
+
+.contactInfo {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500
+}
+
+#dot {
+    color: #C1C31F
 }
 
 .content {
     margin-bottom: 30px
 }
 
-#bioText {
-    padding: 15px
+.bioText {
+    padding: 15px;
+    text-indent: 50px;
 }
 
 #selfie {
@@ -61,6 +87,67 @@ h1 {
     float: left;
     margin: 0 15px 15px 15px;
     padding: 15px 0 0 0
+}
+
+.projectOne, .projectTwo, .projectThree {
+    width: 47%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C1C31F;
+    float: left;
+    margin: 10px
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px
+}
+
+.projectImgs {
+    width: 85%;
+    display: block;
+    margin: 20px auto 0 auto
+}
+
+.projectLinks {
+    width: 85%;
+    height: 20px;
+    background-color: #74776b;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    bottom: 75px;
+}
+
+.projectLinks li {
+    display: inline-block;
+    color: #C1C31F
+}
+
+.projectLinks a {
+    text-decoration: none;
+    color: #000000
+}
+
+.projectLinks a:hover {
+    background-color: #8aa2a9
+}
+
+@media only screen and (max-width: 920px) {
+    .projectOne, .projectTwo, .projectThree {
+        width: 80%;
+        float: none;
+        margin: 25px auto
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .projectLinks {
+        bottom: 50px
+    }
 }
 
 .clearfix::after {
